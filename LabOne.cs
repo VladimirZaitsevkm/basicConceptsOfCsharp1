@@ -48,5 +48,23 @@ namespace LabOne1
 
             Console.WriteLine($"{savedA} в {n} степени: {a}");
         }
-    }
+
+        static void TaskTwo()
+        {
+            Console.WriteLine("Введите значение x: ");
+            int x = Convert.ToInt32(Console.ReadLine());
+
+            if (x < 100)
+            {
+                Console.WriteLine("Число x должно быть >= 100");
+                return;
+            }
+
+            string n = Convert.ToString(x);
+            char secondChar = n[1];
+            n = n.Remove(1, 1);
+            n += secondChar;
+
+            Console.WriteLine($"Результат: {n}");
+        }
 }
