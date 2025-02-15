@@ -67,4 +67,5 @@ namespace LabOne1
 
             Console.WriteLine($"Результат: {n}");
         }
+    }
 }
